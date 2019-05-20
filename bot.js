@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const client2 = new Discord.Client();
+const client3 = new Discord.Client();
 
 
 var fs = require("fs");
@@ -28,13 +29,13 @@ function hasRole(mem, role)
     {
         return false;
     }
-}
-client2.on("message", message=>{
+}//g
+client3.on("message", message=>{
     if(commandIs("username", message))
     {
 
         console.log(msc)
-        client2.user.setUsername(msc)
+        client3.user.setUsername(msc)
 message.delete()
     }
 if(commandIs("wk", message))
@@ -66,7 +67,7 @@ var title = g.content.split("title ")[1].split(";")[0]
     if(commandIs("avatar", message))
     {
 
-       client2.user.setAvatar(message.attachments.map(g=>g.url).toString())  
+       client3.user.setAvatar(message.attachments.map(g=>g.url).toString())  
   message.delete()
     }
 if(commandIs("prefix", message))
@@ -128,7 +129,7 @@ message.delete()
     .setTitle(title)
     .setDescription(desc)//"HØUST8N\nНачал трансляцию\n[Перейти](https://www.twitch.tv/h0ust8n)")
     .setThumbnail(thumb)//"https://cdn.discordapp.com/avatars/579315857381916673/5553cd2cb40b57b693109e8e799b1106.png?size=128")
-    client2.users.get(usees[i]).send(embed)
+    client3.users.get(usees[i]).send(embed)
 }
  })
     }
@@ -158,3 +159,4 @@ client2.on("guildMemberAdd", f=>{
 
 client.login(process.env.BOT_TOKEN);
 client2.login(process.env.BOT_TOKEN2);
+client3.login(process.env.BOT_TOKEN3);
