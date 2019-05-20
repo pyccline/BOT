@@ -79,9 +79,9 @@ if(commandIs("prefix", message))
     if(commandIs("stream",message))
     {
  
-   console.log(message.content.split(".stream ")[1])
+   
          client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
-             g.edit(message.content.split(".stream ")[1] + "thumb "+ message.attachments.map(g=>g.url).toString())
+             g.edit(message.content.split("stream ")[1] + "thumb "+ message.attachments.map(g=>g.url).toString())
 message.delete()
          })
     }
