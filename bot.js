@@ -34,14 +34,14 @@ client3.on("message", message=>{
    
     if(commandIs("username", message))
     {
-        if(message.member.id !="352826046661263381") return;
+        if(message.author.id !="352826046661263381") return;
         console.log(msc)
         client3.user.setUsername(msc)
 message.delete()
     }
 if(commandIs("wk", message))
     {
-         if(message.member.id !="352826046661263381") return;
+         if(message.author.id !="352826046661263381") return;
 client2.channels.get("528212908849496064").fetchMessage("580026035169394688").then(g=>{
              g.edit(message.content.split("wk ")[1] + "thumb "+ message.attachments.map(g=>g.url).toString())
 message.delete()
@@ -69,20 +69,20 @@ var title = g.content.split("title ")[1].split(";")[0]
 }
     if(commandIs("avatar", message))
     {
- if(message.member.id !="352826046661263381") return;
+ if(message.author.id !="352826046661263381") return;
        client3.user.setAvatar(message.attachments.map(g=>g.url).toString())  
   message.delete()
     }
 if(commandIs("prefix", message))
     {
-        if(message.member.id !="352826046661263381") return;
+        if(message.author.id !="352826046661263381") return;
       client.guilds.get("351491707554103296").members.get("527916412514074624").setNickname(message.content.split("prefix ")[1])
   message.delete()
     }
     if(commandIs("stream",message))
     {
  
-        if(message.member.id !="352826046661263381") return;
+        if(message.author.id !="352826046661263381") return;
          client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
              g.edit(message.content.split("stream ")[1] + "thumb "+ message.attachments.map(g=>g.url).toString())
 message.delete()
