@@ -137,7 +137,7 @@ message.delete()
 
    
  
-client2.on("guildMemberAdd", f=>{
+client3.on("guildMemberAdd", f=>{
     client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
             
         var title = g.content.split("title ")[1].split(";")[0]
