@@ -62,7 +62,7 @@ var title = g.content.split("title ")[1].split(";")[0]
     .setTitle(title)
     .setDescription(desc)//"<@"+f.id+">, приветствую тебя на сервере **"+f.guild.name+"**!\n\n**"+f.guild.name+"** - это закрытый сервер.\nВсе наши участники - адекватные и взрослые люди.\n\n**_Строгая и справедливая администрация\nЖивое и приятное общение\nИнсайдерская информация\nТрансляция магазина Королевской битвы\nОповещения о легендарных PvE миссиях\nУникальная система званий\nЕженедельные топы и конкурсы\nАвторский бот для максимальной автоматизации и удобства_**\n\n          **Добро пожаловать!**")
     
-    .setFooter("DØNUT", "https://triche-generateur.fr/wp-content/uploads/2018/10/unnamed.jpg")
+    .setFooter("DØNUT", "https://media.discordapp.net/attachments/578957526947856405/580033534006263830/vkontakte-vector-png-this-image-rendered-as-png-in-other-widths-200px-500px-500.png")
     .setThumbnail(thumb)
     message.channel.send(embed)
 })
