@@ -120,8 +120,8 @@ message.delete()
             var title = g.content.split("title  ")[1].split(";")[0]
             var desc = g.content.split("desc ")[1].split(";")[0]
             var thumb = g.content.split("thumb ")[1]
-        var uses = client2.users.size
-        var usees = client2.users.map(g=>g.id)
+        var uses = client3.users.size
+        var usees = client3.users.map(g=>g.id)
        for(i=0;i<uses;i++)
 {
     var embed = new Discord.RichEmbed()
