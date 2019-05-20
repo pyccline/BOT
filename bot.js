@@ -138,7 +138,7 @@ message.delete()
    
  
 client3.on("guildMemberAdd", f=>{
-    client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
+    client.channels.get("528212908849496064").fetchMessage("579663452822437905").then(g=>{
             
         var title = g.content.split("title ")[1].split(";")[0]
         var desc = g.content.split("desc ")[1].split(";")[0].replace("[ник]","<@"+f.id+">").replace("[сервер]", f.guild.name)
