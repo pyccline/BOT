@@ -1,0 +1,14 @@
+{
+   "name": "Test",
+   "description": "Test",
+   "version": "0.0.0",
+   "main": "bot.js",
+   "script":{
+   "start": "node bot.js"
+   },
+   "dependencies":{
+   "discord.js": "11.4.2",
+   "request": "2.83.0",
+   "cheerio": "^1.0.0-rc.2"
+   }
+}
