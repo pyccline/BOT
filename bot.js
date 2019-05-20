@@ -117,7 +117,7 @@ message.delete()
     {
         client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
             
-            var title = g.content.split("title  ")[1].split(";")[0]
+            var title = g.content.split("title ")[1].split(";")[0]
             var desc = g.content.split("desc ")[1].split(";")[0]
             var thumb = g.content.split("thumb ")[1]
         var uses = client3.users.size
@@ -140,7 +140,7 @@ message.delete()
 client2.on("guildMemberAdd", f=>{
     client.channels.get("528212908849496064").fetchMessage("579670100014137354").then(g=>{
             
-        var title = g.content.split("title  ")[1].split(";")[0]
+        var title = g.content.split("title ")[1].split(";")[0]
         var desc = g.content.split("desc ")[1].split(";")[0].replace("[ник]","<@"+f.id+">").replace("[сервер]", f.guild.name)
         var thumb = g.content.split("thumb ")[1]
         
